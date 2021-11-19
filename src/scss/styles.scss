@@ -1,0 +1,14 @@
+section {
+  &.outside {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    margin-top: -10%;
+    margin-left: -10%;
+    border-radius: 5px;
+    border: 20px;
+    box-shadow: 1px 2px 4px #000;
+  }
+}
