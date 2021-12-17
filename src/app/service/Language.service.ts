@@ -15,6 +15,7 @@ export class LanguageService {
     constructor(private http: HttpClient) { }
     getLang(_Lang: Lang) {
         this.Language = _Lang;
-        this.http.get(`assets/fill/${this.Language}.json`).subscribe(json => { this.LangObj = json; })
+        this.http.get(`assets/fill/${this.Language}.json`)
+            .subscribe(json => this.LangObj = json);
     }
 }
